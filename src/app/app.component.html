@@ -1,20 +1,97 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+  <title>Dozee</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Dozee Data Analysis</h1>
+</div>
+
+<div class="container">
+  <table>
+  <tr>
+    <th>Attribute</th>
+    <th>Analysis</th>
+  </tr>
+  <tr>
+    <td>TotalSleep</td>
+    <td>{{totalSleep}}</td>
+  </tr>
+  <tr>
+    <td>LightSleep</td>
+    <td>{{lightSleep}}</td>
+  </tr>
+  <tr>
+    <td>RemSleep</td>
+    <td>{{remSleep}}</td>
+  </tr>
+  <tr>
+    <td>DeepSleep</td>
+    <td>{{deepTime}}</td>
+  </tr>
+  <tr>
+    <td>Awake</td>
+    <td>{{awake}}</td>
+  </tr>
+  <tr>
+    <td>HeartRate</td>
+    <td>{{heartRate}}</td>
+  </tr>
+  <tr>
+    <td>BreathRate</td>
+    <td>{{breathRate}}</td>
+  </tr>
+</table>
+  <div class="row">
+    <div class="col-sm-6">
+      <canvas id="canvas">{{ chart }}</canvas>
+    </div>
+    <div class="col-sm-6">
+      <canvas id="canvas1">{{ chart }}</canvas>
+    </div>
+    <div class="col-sm-6">
+      <canvas id="canvas2">{{ chart }}</canvas>
+    </div>
+    <div class="col-sm-6">
+      <canvas id="canvas3">{{ chart }}</canvas>
+    </div>
+    <div class="col-sm-6">
+      <canvas id="canvas4">{{ chart }}</canvas>
+    </div>
+    <div class="col-sm-6">
+      <canvas id="canvas5">{{ chart }}</canvas>
+    </div>
+    <div class="col-sm-6">
+      <canvas id="canvas6">{{ chart }}</canvas>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
